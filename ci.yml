@@ -1,0 +1,10 @@
+prepare:
+  steps:
+    - name: Install dependencies
+      command: yarn
+test:
+  steps: []
+run:
+  steps:
+    - name: Start server
+      command: yarn start
