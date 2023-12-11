@@ -1,10 +1,13 @@
 import express from 'express';
+import cors from 'cors';
 
 import textEndpoint from './routes/text.js';
 import imageEndpoint from './routes/image.js';
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Welcome to this API!');
